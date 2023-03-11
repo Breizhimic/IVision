@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--Icon-->
+      <link rel="icon" href="https://cdn.glitch.global/b305e357-23b0-4a91-92e9-c5fa249a3654/Plan-de-travail-3.ico?v=1675109602824">
+
+      <!--install ScrollTrigger-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+      <!-- install Gsap ScrollTrigger-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+      integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <!--install AwesomeFont-->
+      <script src="https://kit.fontawesome.com/2dd49550a9.js" crossorigin="anonymous"></script>
+      
+      <!--link CSS-->
+      <link href="CSS/reset.css" rel="stylesheet" type="text/css">
+      <link href="CSS/style.css" rel="stylesheet" type="text/css">
+      
+      <title>Ivision®</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <ul role="list">
+            <li class="no-hover logo"><a href="index.html"><img src="https://cdn.glitch.global/b305e357-23b0-4a91-92e9-c5fa249a3654/logo-borderbox.svg?v=1675198816858" alt="logo" class="logo"/></a></li>
+            <div role="separator" style="display: flex;">
+              <a href="actu.html"><li listitem="listitem">Actualités</li></a>
+              <a href="boutique.html"><li role="listitem">Boutique</li></a>
+              <a href="us.html"><li role="listitem">Qui sommes-nous ?</li></a>
+            </div>
+            <div style="display: flex;">
+              <a href="#"><li class="bg no-hover"><i class="fa-sharp fa-solid fa-cart-shopping"></i></li></a>
+              <a href="login.html"><li class="bg no-hover"><i class="fa-solid fa-circle-user"></i></li></a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="part-1">
+      <div class="container-1 all-screen">
+        <section id="left">
+          <div class="display" style="justify-content: flex-start;">
+            <div class="container-text">
+              <h4 class="product-name">Ivision® glasses 2.0</h4>
+              <h1 class="slogan" id="text-typewriter">You will not believe your eyes.</h1>
+              <button class="buy-btn" onclick="redirectionBoutique()"><strong>Acheter</strong></button>
+            </div>
+          </div>
+        </section>
+        <section id="right">
+          <div class="display">
+            <div id="pics" class="display">
+              <img src="https://cdn.glitch.global/b305e357-23b0-4a91-92e9-c5fa249a3654/exemple-2.webp?v=1675624426232" class="exemple-img" alt="exemple-utilisation-ar">
+              <img src="https://cdn.glitch.global/b305e357-23b0-4a91-92e9-c5fa249a3654/lunettes.png?v=1675624024972" class="glasses-img" alt="luenttes">
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section id="part-2">
+      <div class="container-2">
+        <div class="container-4-containers">
+          <div class="container-1-index containers-4-index" id="1" onclick="redirectionBoutique()">
+            <div class="container-title-index">
+              <h3 class="event-title">Saint-Valentin</h3>
+              <h4 class="event-paragrph">Avec tout votre amour.</h4>
+              <p class="event-buy"><a href="boutique.html"><span class="underline">Acheter</span> ></a></p>
+            </div>
+          </div>
+          <div class="container-2-index containers-4-index" id="2" onclick="redirectionActu()">
+            <div class="container-title-index">
+              <h3 class="event-title color-black">Ivision® X Ray-Ban®</h3>
+              <h4 class="event-paragrph color-black">Quand le design se mêle à la technologie.</h4>
+              <p class="event-buy"><a href="actu.html" class="color-black"><span class="underline">En savoir plus</span> ></a></p>
+            </div>
+          </div>
+          <div class="container-3-index containers-4-index" id="3" onclick="redirectionActu()">
+            <div class="container-title-index">
+              <h3 class="event-title">Nouvelle annonce.</h3>
+              <h4 class="event-paragrph">Toujours mieux...</h4>
+              <p class="event-buy"><a href="actu.html"><span class="underline">Rendez-vous le 08/03/2023 à 19h00</span> ></a></p>
+            </div>
+          </div>
+          <div class="container-4-index containers-4-index" id="4" onclick="redirectionActu()">
+            <div class="container-title-index">
+              <h3 class="event-title">Pour les développeurs et les créateurs...</h3>
+              <h4 class="event-paragrph">...découvrez Icode !</h4>
+              <p class="event-buy"><a href="actu.html"><span class="underline">En savoir plus</span> ></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="display-social-media">
+          <div class="separator" style="width: 95%; margin-top: 40px;"></div>
+            <div class="footer">
+              <div class="social-media-container">
+                <h1 class="social-media-title">Retrouvez-nous sur nos réseaux sociaux !</h1>
+                <ul class="hz">
+                  <li><a href="https://www.instagram.com/ivision.corp/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="mailto:help@ivision.com"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="display-informations">
+          <div class="separator" style="width: 100%; margin-top: 20px; margin-bottom: 40px;"></div>
+            <div class="footer">
+              <div class="informations-container">
+                <ul class="names p3">
+                  <h1 style="font-size: 20px; color: var(--primary-color); text-transform: uppercase;">Un site réalisé par</h1>
+                  <li><span class="name">Jules</span><span class="last-name">Antoine</span></li>
+                  <li><span class="name">Ewen</span><span class="last-name">Parel</span></li>
+                  <li><span class="name">Emma</span><span class="last-name">Fremin</span></li>
+                  <li><span class="name">Cameron</span><span class="last-name">Desmeulles</span></li>
+                  <li><span class="name">Daria</span><span class="last-name">Senich</span></li>
+                </ul>
+                <div class="separator-y"></div>
+                <div class="p3" style="text-align: center">
+                  <img class="logo-ind" src="https://cdn.glitch.global/b305e357-23b0-4a91-92e9-c5fa249a3654/logo-ind.png?v=1676201366335" alt="logo-ind">
+                </div>
+                <div class="separator-y"></div>
+                <ul class="names p3">
+                  <h1 style="font-size: 20px; color: var(--primary-color); text-transform: uppercase;">informations complémentaires</h1>
+                  <li><span class="question">Etablissement :</span><span class="answer">Institut-Notre-Dame</span></li>
+                  <li><span class="question">Classe :</span><span class="answer">Seconde Jaune</span></li>
+                  <li><span class="question">Poste informatique :</span><span class="answer">???</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="top-btn-container" style="transition: all .5s;" id="myBtn">
+      <a href="#"><button type="button" name="back-to-top" class="top-btn"><i class="fa-solid fa-arrow-up"></i></button></a>
+    </div>
+    <script>
+      function redirectionBoutique(){
+        document.location.href = "boutique.html";
+      }
+
+      function redirectionActu(){
+        document.location.href = "actu.html"
+      }
+
+      //back-to-top button
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+          mybutton.style.opacity = "1";
+        } else {
+          mybutton.style.opacity = "0";
+        }
+      }
+
+      //typewriter
+      var text = document.getElementById('text-typewriter');
+      var splitText = text.innerText.split('');
+
+      text.innerHTML = '';
+        i = 0
+        setInterval(function(){
+          AjoutDeLettre()}
+          , 120 )
+
+      function AjoutDeLettre(){
+        if(i < splitText.length){
+          text.innerHTML += splitText[i];
+          i++;
+        }
+      }
+    </script>
+  </body>
+</html>
